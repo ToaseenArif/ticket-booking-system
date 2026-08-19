@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — Wayfare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="index.html" class="logo"><span class="logo-box"></span>Wayfare</a>
+  <div class="nav-buttons">
+    <a class="link-btn" href="index.html">Back to home</a>
+  </div>
+</header>
+ 
+<!-- SIGN IN / SIGN UP FORM -->
+<section class="auth-wrap">
+  <div class="auth-card">
+ 
+    <!-- Tabs to switch between the two forms -->
+    <div class="tabs" id="auth-tabs">
+      <div class="tab active" data-form="signin-form">Sign in</div>
+      <div class="tab" data-form="signup-form">Sign up</div>
+    </div>
+ 
+    <!-- SIGN IN FORM -->
+    <form id="signin-form" class="auth-form">
+      <p class="auth-title">Welcome back</p>
+      <p class="auth-sub">Sign in to manage your bookings and get instant e-tickets.</p>
+ 
+      <div class="field">
+        <label for="signin-email">Email address</label>
+        <input type="email" id="signin-email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="signin-password">Password</label>
+        <input type="password" id="signin-password" placeholder="Enter your password">
+      </div>
+ 
+      <div class="auth-row">
+        <label class="remember"><input type="checkbox"> Remember me</label>
+        <a href="#" class="link-btn">Forgot password?</a>
+      </div>
+ 
+      <button type="submit" class="search-btn">Sign in</button>
+    </form>
+ 
+    <!-- SIGN UP FORM (hidden until the Sign up tab is clicked) -->
+    <form id="signup-form" class="auth-form hidden">
+      <p class="auth-title">Create your account</p>
+      <p class="auth-sub">Join Wayfare to book faster next time.</p>
+ 
+      <div class="field">
+        <label for="signup-name">Full name</label>
+        <input type="text" id="signup-name" placeholder="Your name">
+      </div>
+      <div class="field">
+        <label for="signup-email">Email address</label>
+        <input type="email" id="signup-email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" placeholder="Create a password">
+      </div>
+      <div class="field">
+        <label for="signup-confirm">Confirm password</label>
+        <input type="password" id="signup-confirm" placeholder="Re-enter your password">
+      </div>
+ 
+      <button type="submit" class="search-btn">Create account</button>
+    </form>
+ 
+  </div>
+</section>
+ 
+<script src="auth.js"></script>
+</body>
+</html>
+ 

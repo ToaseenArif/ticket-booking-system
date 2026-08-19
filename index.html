@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayfare — Book Bus, Train, Flight & Event Tickets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo"><span class="logo-box"></span>Wayfare</div>
+  <nav class="nav-links">
+    <a href="#deals">Deals</a>
+    <a href="#routes">Routes</a>
+    <a href="#how">How it works</a>
+    <a href="#why">Why us</a>
+    <a href="#faq">FAQs</a>
+  </nav>
+  <div class="nav-buttons">
+    <a class="link-btn" href="partner.html">Become a partner</a>
+    <a class="link-btn" href="signin.html">Sign in</a>
+    <a class="btn" href="#book">Book a ticket</a>
+  </div>
+</header>
+ 
+<!-- HERO + SEARCH FORM -->
+<section class="hero" id="book">
+  <div class="ticket-card">
+    <div class="ticket-left">
+      <p class="eyebrow">Bus · Train · Flight · Events</p>
+      <h1>Book your next <span>journey</span> in minutes.</h1>
+      <p class="hero-text">Compare fares, pick your seat, and get an instant e-ticket — no queues, no paper.</p>
+      <div class="hero-stats">
+        <div><strong>2.4M+</strong><span>Tickets booked</span></div>
+        <div><strong>180+</strong><span>Cities covered</span></div>
+        <div><strong>4.8★</strong><span>Average rating</span></div>
+      </div>
+    </div>
+ 
+    <div class="ticket-right">
+      <p class="stub-label">Search tickets</p>
+      <div class="tabs" id="tabs">
+        <div class="tab active" data-tab="bus">Bus</div>
+        <div class="tab" data-tab="train">Train</div>
+        <div class="tab" data-tab="flight">Flight</div>
+        <div class="tab" data-tab="event">Events</div>
+      </div>
+      <form id="search-form">
+        <div class="field"><label for="from">From</label><input type="text" id="from" value="Lahore"></div>
+        <div class="field"><label for="to">To</label><input type="text" id="to" value="Islamabad"></div>
+        <div class="field"><label for="depart">Departure date</label><input type="date" id="depart"></div>
+        <div class="field">
+          <label for="passengers">Passengers</label>
+          <select id="passengers">
+            <option>1 passenger</option>
+            <option>2 passengers</option>
+            <option>3 passengers</option>
+            <option>4+ passengers</option>
+          </select>
+        </div>
+        <button type="submit" class="search-btn">Search available tickets</button>
+      </form>
+    </div>
+  </div>
+</section>
+ 
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="trust-item"><strong>Best price</strong><span>Guarantee on every route</span></div>
+  <div class="trust-item"><strong>Instant</strong><span>E-tickets, no printing</span></div>
+  <div class="trust-item"><strong>Secure</strong><span>Encrypted payments</span></div>
+  <div class="trust-item"><strong>24/7</strong><span>Human support</span></div>
+</section>
+ 
+<!-- DEALS & PROMOTIONS -->
+<section class="section" id="deals">
+  <div class="section-head">
+    <p class="eyebrow">Limited time</p>
+    <h2>Deals &amp; promotions</h2>
+  </div>
+ 
+  <div class="deals-slider">
+    <button class="deal-arrow prev" id="deal-prev" aria-label="Previous deal">‹</button>
+ 
+    <div class="deals-track" id="deals-track">
+      <div class="deal-slide">
+        <div class="deal-image deal-1">
+          <img src="buss.jpg" alt="Weekend bus getaway deal">
+          <span class="deal-badge">Save 20%</span>
+        </div>
+        <div class="deal-info"><h3>Weekend bus getaways</h3><p>20% off return fares booked 3 days ahead.</p></div>
+      </div>
+      <div class="deal-slide">
+        <div class="deal-image deal-2">
+          <img src="images.jpg" alt="First train ride discount">
+          <span class="deal-badge">Flat Rs 500 off</span>
+        </div>
+        <div class="deal-info"><h3>First train ride free perk</h3><p>New users save Rs 500 on their first booking.</p></div>
+      </div>
+      <div class="deal-slide">
+        <div class="deal-image deal-3">
+          <img src="plane.jpg" alt="Early bird flight fares">
+          <span class="deal-badge">Early bird</span>
+        </div>
+        <div class="deal-info"><h3>Flight fares from Rs 9,999</h3><p>Book 2 weeks early and lock in the lowest fare.</p></div>
+      </div>
+    </div>
+ 
+    <button class="deal-arrow next" id="deal-next" aria-label="Next deal">›</button>
+  </div>
+ 
+  <div class="deal-dots" id="deal-dots">
+    <span class="deal-dot active"></span>
+    <span class="deal-dot"></span>
+    <span class="deal-dot"></span>
+  </div>
+</section>
+ 
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="section-head">
+    <p class="eyebrow">The process</p>
+    <h2>Three steps to your seat</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card"><div class="step-number">01</div><h3>Search your route</h3><p>Tell us where and when you're headed.</p></div>
+    <div class="card"><div class="step-number">02</div><h3>Pick your seat</h3><p>Compare fares and amenities side by side.</p></div>
+    <div class="card"><div class="step-number">03</div><h3>Board with your e-ticket</h3><p>Pay securely, get a QR ticket instantly.</p></div>
+  </div>
+</section>
+ 
+<!-- POPULAR ROUTES -->
+<section class="section" id="routes">
+  <div class="section-head">
+    <p class="eyebrow">Trending now</p>
+    <h2>Popular routes this week</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card route-card">
+      <div class="route-top"><span class="route-tag">Bus</span><strong>Rs 1,800</strong></div>
+      <div class="route-path">Lahore → Islamabad</div>
+      <div class="route-meta">5h 10m · 32/day</div>
+    </div>
+    <div class="card route-card">
+      <div class="route-top"><span class="route-tag">Train</span><strong>Rs 2,450</strong></div>
+      <div class="route-path">Karachi → Lahore</div>
+      <div class="route-meta">16h 40m · 4/day</div>
+    </div>
+    <div class="card route-card">
+      <div class="route-top"><span class="route-tag">Flight</span><strong>Rs 12,300</strong></div>
+      <div class="route-path">Islamabad → Karachi</div>
+      <div class="route-meta">2h 05m · 11/day</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- WHY CHOOSE US -->
+<section class="section why-section" id="why">
+  <div class="section-head">
+    <p class="eyebrow">Why choose Wayfare</p>
+    <h2>Built for people who travel often</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card why-card"><span class="why-tag">Fare</span><h3>Best price guarantee</h3><p>Cheaper elsewhere? We refund the difference.</p></div>
+    <div class="card why-card"><span class="why-tag">Delivery</span><h3>Instant e-tickets</h3><p>QR tickets land in your inbox right away.</p></div>
+    <div class="card why-card"><span class="why-tag">Support</span><h3>Help anytime</h3><p>A real person is reachable 24 hours a day.</p></div>
+  </div>
+</section>
+ 
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-head">
+    <p class="eyebrow">Before you book</p>
+    <h2>Frequently asked questions</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item open">
+      <button class="faq-question"><span>Can I cancel or reschedule my ticket?</span><span class="faq-icon"></span></button>
+      <div class="faq-answer"><p>Yes, most fares can be cancelled free up to 6 hours before departure.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>How long does a refund take?</span><span class="faq-icon"></span></button>
+      <div class="faq-answer"><p>Refunds arrive within 3–5 business days. Wallet refunds are usually instant.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>Do I need to print my ticket?</span><span class="faq-icon"></span></button>
+      <div class="faq-answer"><p>No, your QR e-ticket works straight from your phone.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>What payment methods are accepted?</span><span class="faq-icon"></span></button>
+      <div class="faq-answer"><p>Debit/credit cards, mobile wallets, and bank transfers.</p></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div>
+    <h2>Get fare drops in your inbox</h2>
+    <p>Subscribe for weekly deals. No spam, unsubscribe anytime.</p>
+  </div>
+  <form id="newsletter-form" class="newsletter-form">
+    <input type="email" id="newsletter-email" placeholder="Enter your email address">
+    <button type="submit" class="btn">Subscribe</button>
+  </form>
+</section>
+ 
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div>
+    <h2>Your next trip is one search away.</h2>
+    <p>Join 2.4 million travellers who book smarter with Wayfare.</p>
+  </div>
+  <a href="#book" class="btn">Start booking</a>
+</div>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="logo"><span class="logo-box"></span>Wayfare</div>
+      <p>Book bus, train, flight, and event tickets across 180+ cities.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li><a href="#">About us</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li><li><a href="partner.html">Become a partner</a></li></ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul><li><a href="#">Privacy policy</a></li><li><a href="#">Terms</a></li><li><a href="#">Refunds</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Wayfare Tickets. All rights reserved.</div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
